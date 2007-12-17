@@ -13,7 +13,6 @@ URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Text/%{module}-%{version}.tar.bz2
 BuildRequires:  perl(Module::Build)
 BuildArch:      noarch
-Buildroot:      %{_tmppath}/%{name}-%{version}
 
 %description
 Pretty nifty if you want to output dynamic text to your console or other
