@@ -1,19 +1,19 @@
-%define module  Text-ASCIITable
-%define name    perl-%{module}
-%define version 0.18
-%define release %mkrel 5
+%define upstream_name    Text-ASCIITable
+%define upstream_version 0.18
 
-Name:       %{name}
-Version:    %{version}
-Release:    %{release}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+
 Summary:    Create a nice formatted table using ASCII characters
 License:    Artistic/GPL
 Group:      Development/Perl
-URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Text/%{module}-%{version}.tar.bz2
+Url:        http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.bz2
+
 BuildRequires:  perl(Module::Build)
 BuildArch:      noarch
-Buildroot:      %{_tmppath}/%{name}-%{version}
+Buildroot:      %{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Pretty nifty if you want to output dynamic text to your console or other
@@ -21,7 +21,7 @@ fixed-size-font displays, and at the same time it will display it in a nice
 human-readable, or "cool" way.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
@@ -42,4 +42,3 @@ rm -rf %{buildroot}
 
 %clean
 rm -rf %{buildroot}
-
