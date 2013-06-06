@@ -1,6 +1,5 @@
 %define upstream_name    Text-ASCIITable
-%define upstream_version 0.18
-
+%define upstream_version 0.20
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version 0.20
 Release:    1
