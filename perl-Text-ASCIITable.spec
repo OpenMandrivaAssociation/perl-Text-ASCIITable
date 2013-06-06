@@ -1,15 +1,14 @@
 %define upstream_name    Text-ASCIITable
-%define upstream_version 0.18
-
+%define upstream_version 0.20
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 1
+Version:    %perl_convert_version 0.20
+Release:    1
 
 Summary:    Create a nice formatted table using ASCII characters
 License:    Artistic/GPL
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:    http://www.cpan.org/modules/by-module/Text/Text-ASCIITable-0.20.tar.gz
 
 BuildRequires:  perl(Module::Build)
 BuildArch:      noarch
@@ -73,7 +72,7 @@ rm -rf %{buildroot}
 - New version 0.18
 - Module::Build-based build
 
-* Fri Apr 28 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.17-2mdk
+* Fri Apr 28 2006 Nicolas LÃ©cureuil <neoclust@mandriva.org> 0.17-2mdk
 - Fix SPEC according to Perl Policy
     - Source URL
 - use mkrel
@@ -90,4 +89,5 @@ rm -rf %{buildroot}
 
 * Tue May 03 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 0.15-1mdk
 - First Mandriva release
+
 

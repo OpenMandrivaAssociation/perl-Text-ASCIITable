@@ -1,2 +1,4 @@
+removed_sources:
+  Text-ASCIITable-0.18.tar.bz2: cbe1641a74840651db1eb735800264110afa8376
 sources:
-  "Text-ASCIITable-0.18.tar.bz2": cbe1641a74840651db1eb735800264110afa8376
+  Text-ASCIITable-0.20.tar.gz: fda6cbe2dbe4e665aa452082bc509506c7222400
