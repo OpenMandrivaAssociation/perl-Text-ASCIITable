@@ -2,7 +2,7 @@
 %define upstream_version 0.20
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version 0.20
-Release:    1
+Release:    2
 
 Summary:    Create a nice formatted table using ASCII characters
 License:    Artistic/GPL
