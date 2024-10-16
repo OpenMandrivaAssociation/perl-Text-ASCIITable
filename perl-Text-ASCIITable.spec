@@ -7,7 +7,7 @@ Release:    3
 Summary:    Create a nice formatted table using ASCII characters
 License:    Artistic/GPL
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/%{upstream_name}
+Url:        https://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Text/Text-ASCIITable-0.20.tar.gz
 
 BuildRequires:  perl(Module::Build)
