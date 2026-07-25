@@ -1,14 +1,14 @@
 %define upstream_name    Text-ASCIITable
-%define upstream_version 0.20
+%define upstream_version 0.22
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version 0.20
-Release:    3
+Version:    %{upstream_version}
+Release:    1
 
 Summary:    Create a nice formatted table using ASCII characters
 License:    Artistic/GPL
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Text/Text-ASCIITable-0.20.tar.gz
+Url:        https://metacpan.org/dist/Text-ASCIITable
+Source0:    https://cpan.metacpan.org/authors/id/L/LU/LUNATIC/Text-ASCIITable-0.22.tar.gz
 
 BuildRequires:  perl(Module::Build)
 BuildArch:      noarch
