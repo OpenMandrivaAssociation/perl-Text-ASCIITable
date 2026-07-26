@@ -1,8 +1,7 @@
 %define upstream_name    Text-ASCIITable
-%define upstream_version 0.22
 Name:       perl-%{upstream_name}
-Version:    %{upstream_version}
-Release:    1
+Version:    0.22
+Release:    2
 
 Summary:    Create a nice formatted table using ASCII characters
 License:    Artistic/GPL
@@ -20,7 +19,7 @@ fixed-size-font displays, and at the same time it will display it in a nice
 human-readable, or "cool" way.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 %{__perl} Build.PL installdirs=vendor
@@ -46,9 +45,7 @@ rm -rf %{buildroot}
 %changelog
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.180.0-1mdv2010.0
 + Revision: 405605
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.18-5mdv2009.0
+- rebuild using %0.22 Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.18-5mdv2009.0
 + Revision: 258609
 - rebuild
 
