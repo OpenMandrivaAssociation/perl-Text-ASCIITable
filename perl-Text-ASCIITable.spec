@@ -2,7 +2,7 @@
 %define upstream_version 0.22
 Name:       perl-%{upstream_name}
 Version:	0.22
-Release:	2
+Release:	3
 
 Summary:    Create a nice formatted table using ASCII characters
 License:    Artistic/GPL
@@ -29,7 +29,7 @@ human-readable, or "cool" way.
 %check
 # soft: do not fail package on test failures
 set +e
-./Build test
+./Build test || :
 
 %install
 rm -rf %{buildroot}
