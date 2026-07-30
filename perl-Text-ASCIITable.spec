@@ -1,13 +1,14 @@
 %define upstream_name    Text-ASCIITable
+%define upstream_version 0.22
 Name:       perl-%{upstream_name}
-Version:    0.22
-Release:    2
+Version:	0.22
+Release:	1
 
 Summary:    Create a nice formatted table using ASCII characters
 License:    Artistic/GPL
 Group:      Development/Perl
 Url:        https://metacpan.org/dist/Text-ASCIITable
-Source0:    https://cpan.metacpan.org/authors/id/L/LU/LUNATIC/Text-ASCIITable-0.22.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/L/LU/LUNATIC/Text-ASCIITable-0.22.tar.gz
 
 BuildRequires:  perl(Module::Build)
 BuildArch:      noarch
@@ -40,51 +41,5 @@ rm -rf %{buildroot}
 
 %clean
 rm -rf %{buildroot}
-
-
-%changelog
-* Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.180.0-1mdv2010.0
-+ Revision: 405605
-- rebuild using %0.22 Thu Jul 31 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.18-5mdv2009.0
-+ Revision: 258609
-- rebuild
-
-* Thu Jul 24 2008 Thierry Vignaud <tvignaud@mandriva.com> 0.18-4mdv2009.0
-+ Revision: 246599
-- rebuild
-
-* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 0.18-2mdv2008.1
-+ Revision: 140721
-- restore BuildRoot
-
-  + Thierry Vignaud <tvignaud@mandriva.com>
-    - kill re-definition of %%buildroot on Pixel's request
-
-* Sun Aug 19 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.18-2mdv2008.0
-+ Revision: 67082
-- rebuild
-
-
-* Mon Jul 31 2006 Guillaume Rousse <guillomovitch@mandriva.org> 0.18-1mdv2007.0
-- New version 0.18
-- Module::Build-based build
-
-* Fri Apr 28 2006 Nicolas Lécureuil <neoclust@mandriva.org> 0.17-2mdk
-- Fix SPEC according to Perl Policy
-    - Source URL
-- use mkrel
-
-* Wed Sep 28 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.17-1mdk
-- New release 0.17
-
-* Fri Sep 23 2005 Guillaume Rousse <guillomovitch@mandriva.org> 0.16-1mdk
-- new version 
-- rpmbuildupdate aware
-- fix directory ownership
-- spec cleanup
-- make test in %%check
-
-* Tue May 03 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 0.15-1mdk
-- First Mandriva release
 
 
