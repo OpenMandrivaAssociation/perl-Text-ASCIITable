@@ -2,7 +2,7 @@
 %define upstream_version 0.22
 Name:       perl-%{upstream_name}
 Version:	0.22
-Release:	3
+Release:	4
 
 Summary:    Create a nice formatted table using ASCII characters
 License:    Artistic/GPL
@@ -11,6 +11,7 @@ Url:        https://metacpan.org/dist/Text-ASCIITable
 Source0:	https://cpan.metacpan.org/authors/id/L/LU/LUNATIC/Text-ASCIITable-0.22.tar.gz
 
 BuildRequires:  perl(Module::Build)
+BuildRequires:	perl-devel
 BuildArch:      noarch
 Buildroot:      %{_tmppath}/%{name}-%{version}-%{release}
 
@@ -23,7 +24,7 @@ human-readable, or "cool" way.
 %setup -q -n Text-ASCIITable-0.22
 
 %build
-%{__perl} Build.PL installdirs=vendor
+perl Build.PL installdirs=vendor
 ./Build CFLAGS="%{optflags}"
 
 %check
